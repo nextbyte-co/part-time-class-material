@@ -2,26 +2,7 @@
 
 ![HTML](./assets/html.png)
 
-# 1. SVG (Scalable Vector Graphic)
-
-```html
-<svg width="200" height="200">
-  <circle cx="100" cy="100" r="80" stroke="red" stroke-width="5" fill="blue" />
-</svg>
-<svg width="400" height="200">
-  <rect
-    x="25"
-    y="25"
-    width="300"
-    height="100"
-    style="fill: rgb(100, 0, 100);
-stroke-width: 5;
-stroke: black;"
-  ></rect>
-</svg>
-```
-
-# 2. Form
+# 1. Form
 
 ```html
 <form action="" method="post">
@@ -106,7 +87,7 @@ stroke: black;"
 </fieldset>
 ```
 
-# 3. Division Tag
+# 2. Division Tag
 
 ```html
 <body>
@@ -118,7 +99,7 @@ stroke: black;"
 
 note: Tag div biasanya dibuat sebagai wadah atau pembungkus suatu element atau beberapa element. Cara kerja-nya sama dengan tag `<p>` yang block element.
 
-# 4. Span Tag
+# 3. Span Tag
 
 ```html
 <body>
@@ -128,7 +109,7 @@ note: Tag div biasanya dibuat sebagai wadah atau pembungkus suatu element atau b
 
 note: Cara kerjanya sama dengan tag `<div>` namun dia inline element
 
-# 5. Articles and Sections
+# 4. Articles and Sections
 
 ```html
 <article>
@@ -145,7 +126,7 @@ note: Cara kerjanya sama dengan tag `<div>` namun dia inline element
 </article>
 ```
 
-# 6. Main, Headers and Footers
+# 5. Main, Headers and Footers
 
 ```html
 <article>
@@ -162,7 +143,7 @@ note: Cara kerjanya sama dengan tag `<div>` namun dia inline element
 </article>
 ```
 
-# 7. Asides
+# 6. Asides
 
 ```html
 <article>
@@ -183,7 +164,7 @@ note: Cara kerjanya sama dengan tag `<div>` namun dia inline element
 </article>
 ```
 
-# 8. Navigation
+# 7. Navigation
 
 ```html
 <nav>
