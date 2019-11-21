@@ -11,15 +11,15 @@ Disebut primitif karena tipe data ini "sederhana" dan hanya terdiri dari satu ni
 3. Boolean
 4. Null
 5. Undefined
-6. Symbol*
+6. Symbol\*
 
 Sedangkan tipe data Object, merupakan tipe data yang boleh dibilang "Khusus" yang perilakunya berbeda dari tipe data primitive.
 
 1. Array
 2. Date
 3. RegExp
-4. Map dan WeakMap*
-5. Set dan WeakSet*
+4. Map dan WeakMap\*
+5. Set dan WeakSet\*
 
 > Tipe Data **symbol**, **map**, **weakmap**, **set**, dan **weakset** adalah tipe data baru dalam ES6.
 
@@ -27,13 +27,13 @@ Sedangkan tipe data Object, merupakan tipe data yang boleh dibilang "Khusus" yan
 
 Tipe data Number merupakan tipe data yang berisikan angka, baik angka itu bulat semisal 1, 20, 70, 200, -66, maupun akngka pecahan seperti 2.5, 0.07, 3.14.
 
-Dalam Javascript tidak disebut tipe data *Integer* atau *Float*, semua yang bernilai angka disebut dengan tipe *Number*. Javascrip juga mendukung bilangan desimal, biner, oktal dan heksadesimal.
+Dalam Javascript tidak disebut tipe data _Integer_ atau _Float_, semua yang bernilai angka disebut dengan tipe _Number_. Javascrip juga mendukung bilangan desimal, biner, oktal dan heksadesimal.
 
 ```javascript
 var angka = 999; // desimal
 let angka2 = 0b1111100111; // biner
 const angka3 = 01747; // oktal
-var angka4 = 0x3E7; // Heksadesimal
+var angka4 = 0x3e7; // Heksadesimal
 
 console.log(angka); // 999
 console.log(angka2); // 999
@@ -56,11 +56,11 @@ console.log(foo); // Infinity
 
 - ### Tipe Data String
 
-Tipe data string adalah tipe data yang berupa teks yang dibungkus dengan *quotes* (' ') atau *doublequotes* (" ")
+Tipe data string adalah tipe data yang berupa teks yang dibungkus dengan _quotes_ (' ') atau _doublequotes_ (" ")
 
 ```javascript
 let firstName = "Jajang";
-let lastName = 'Jamudud';
+let lastName = "Jamudud";
 var phone = "081234567890";
 
 console.log(firstName); // Jajang
@@ -68,13 +68,13 @@ console.log(lastName); // Jamudud
 console.log(phone); // 081234567890
 
 var ayo = "Let's Go!";
-let ayo2 = 'Let\'s Go!';
+let ayo2 = "Let's Go!";
 
 console.log(ayo); // Let's Go!
 console.log(ayo2); // Let's Go!
 ```
 
-Adapun jika ingin menggunakan tanda kutip (*doublequote*) didalam String, maka perlu yang namanya *Escape Character*, lebih lengkapnya bisa dilihatnya [Disini!](https://mathiasbynens.be/notes/javascript-escapes)
+Adapun jika ingin menggunakan tanda kutip (_doublequote_) didalam String, maka perlu yang namanya _Escape Character_, lebih lengkapnya bisa dilihatnya [Disini!](https://mathiasbynens.be/notes/javascript-escapes)
 
 - ### Tipe Data Boolean
 
@@ -156,7 +156,11 @@ console.log(istri); // Array ["Syahrini", "Raisa", "Isyana", "Chelsea Islan"]
 Array 2 Dimensi
 
 ```javascript
-var koordinat = [[2,5],[3,8],[5,9]];
+var koordinat = [
+  [2, 5],
+  [3, 8],
+  [5, 9]
+];
 console.log(koordinat[0][0]); // 2
 console.log(koordinat[0][1]); // 5
 
@@ -166,3 +170,25 @@ console.log(koordinat[1][1]); // 8
 console.log(koordinat[2][0]); // 5
 console.log(koordinat[2][1]); // 9
 ```
+
+---
+
+## Latihan Javascript
+
+Buat biodata anda menggunakan variable Javascript dengan detail sebagai berikut.
+
+- firstName (_String_)
+- lastName (_String_)
+- username (_String_)
+- age (_Number_)
+- email (_String_)
+- hobby (_Array_) \*minmal 4
+- job (_String_)
+- phone (_String_)
+- isMarried = (_Boolean_)
+
+Kemudian buat tiga kalimat menggunakan _Template String_, masing-masing dengan ES5 dan ES6 (jadi terdapat enam kalimat 3 ES5 dan 3 ES6). Setiap data didalam kalimat diambil dari data bio diatas.
+
+> - Halo Nama saya (_firstName_) (_lastName_), usiaku (_age_) tahun, profesi saya sebagai (_job_). Salam kenal!
+> - Saya memiliki dua hobi yang sangat saya sukai, yaitu (_hobby1_) dan (_hobby2_). Tapi saya juga memiliki hobi lainya seperti (_hobi3_) dan (_hobi4_).
+> - Saya memiliki akun GitHub dengan username (_username_), dan kamu bisa menghubungi saya di (_phone_), atau memamui email saya (_email_).
