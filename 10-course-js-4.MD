@@ -6,7 +6,7 @@ IF digunakan untuk membuat sebuah kondisi dimana sebuah program dapat memenuhi k
 
 ```javascript
 if (kondisi) {
-   // kode
+  // kode
 }
 ```
 
@@ -16,14 +16,14 @@ diawalai dengan IF kemudian kondisi yang diinginkan, lalu eksekusi programnya di
 let perut = "lapar";
 
 if (perut === "lapar") {
-   console.log("Waktunya makan!!"); // Waktunya makan!!
+  console.log("Waktunya makan!!"); // Waktunya makan!!
 }
 
 // contoh lain
 let nilai = 8;
 
 if (nilai > 7) {
-   console.log("Kamu Lulus"); // Kamu Lulus
+  console.log("Kamu Lulus"); // Kamu Lulus
 }
 ```
 
@@ -33,39 +33,40 @@ jika kondisi tidak terpenuhi maka kode yang ada di dalam kurung kurawal tidak ak
 let perut = "kenyang";
 
 if (perut === "lapar") {
-   console.log("Waktunya makan!!"); 
+  console.log("Waktunya makan!!");
 }
 ```
+
 - ### IF ELSE Statemant
 
 Jika IF hanya menangani kondisi yang bernilai **true**, maka IF ELSE Statement dapat menangani kondisi **true** maupun **false**.
 
 ```javascript
 if (condition) {
-   // kode jika true
+  // kode jika true
 } else {
-   // kode jika false
+  // kode jika false
 }
 ```
 
-Hampir sama dengan IF, namun ditambahkan *else* disertai dengan kurung kurawal yang menampung kode program.
+Hampir sama dengan IF, namun ditambahkan _else_ disertai dengan kurung kurawal yang menampung kode program.
 
 ```javascript
 let perut = "kenyang";
 
 if (perut === "lapar") {
-   console.log("Waktunya makan!!"); // Tidak akan dieksekusi
+  console.log("Waktunya makan!!"); // Tidak akan dieksekusi
 } else {
-   console.log("Sudah kenyang!!"); // Sudah kenyang!!
+  console.log("Sudah kenyang!!"); // Sudah kenyang!!
 }
 
 // contoh lain
 let nilai = 5;
 
 if (nilai > 7) {
-   console.log("Kamu Lulus"); // Tidak akan dieksekusi
+  console.log("Kamu Lulus"); // Tidak akan dieksekusi
 } else {
-   console.log("Kamu tidak lulus"); // Kamu tidak lulus
+  console.log("Kamu tidak lulus"); // Kamu tidak lulus
 }
 ```
 
@@ -75,11 +76,11 @@ Terkadang ada kasus-kasus yang alur loginya lebih rumit, tidak hanya membutuhkan
 
 ```javascript
 if (condition) {
-   // kode kondisi 1
+  // kode kondisi 1
 } else if (condition2) {
-   // kode kondisi 2
+  // kode kondisi 2
 } else {
-   // kode kondisi 3
+  // kode kondisi 3
 }
 ```
 
@@ -89,22 +90,22 @@ Terdapat dua pengecekan kondisi, jika masing-masing kondisi pertama terpanuhi (t
 let perut = "kenyang";
 
 if (perut === "lapar") {
-   console.log("Waktunya makan!!"); 
+  console.log("Waktunya makan!!");
 } else if (perut === "kenyang") {
-   console.log("Sudah kenyang!!"); 
+  console.log("Sudah kenyang!!");
 } else {
-   console.log("Gak kenyag gak lapar, tapi haus");
+  console.log("Gak kenyag gak lapar, tapi haus");
 }
 
 // contoh lain
 let nilai = 5;
 
 if (nilai >= 9) {
-   console.log("Sempurna"); 
+  console.log("Sempurna");
 } else if (nilai === 7 || nilai === 8) {
-   console.log("Bagus"); 
+  console.log("Bagus");
 } else {
-   console.log("Belajar lebih giat lagi");
+  console.log("Belajar lebih giat lagi");
 }
 ```
 
@@ -114,43 +115,43 @@ Switch Stetement struktur logikanya hampir mirip dengan IF ELSE Statement, namun
 
 ```javascript
 switch (variable) {
-   case (condition1):
-      statement1;
-      break;
-   case (condition2):
-      statement2;
-      break;
-   case (condition3):
-      statement3;
-      break;
-   case (condition4):
-      statement4;
-      break;
-   default:
-      statement5;
+  case condition1:
+    statement1;
+    break;
+  case condition2:
+    statement2;
+    break;
+  case condition3:
+    statement3;
+    break;
+  case condition4:
+    statement4;
+    break;
+  default:
+    statement5;
 }
 ```
 
-Kite perlu menetukan variable setelah *keyword* **switch** dan pemeriksaan kondisi dilakukan disetian **case**
+Kite perlu menetukan variable setelah _keyword_ **switch** dan pemeriksaan kondisi dilakukan disetian **case**
 
 ```javascript
 let jajan = "cilok";
 
 switch (jajan) {
-   case "ketoprak":
-      console.log("Ketupat, tahu, toge, bihun, kerupuk, bumbu kacang");
-      break;
-   case "siomay":
-      console.log("kentang, kol, tahu, siomay, pare, bumbu kacang");
-      break;
-   case "cilok":
-      console.log("aci dicolok, saos, kecap");
-      break;
-   case "bakso":
-      conole.log("bakso kuah kaldu, sledri, mie, bihun, sambal, saos");
-      break;
-   default:
-      console.log("Gak ada tukang dagang, gak bisa jajang euy");
+  case "ketoprak":
+    console.log("Ketupat, tahu, toge, bihun, kerupuk, bumbu kacang");
+    break;
+  case "siomay":
+    console.log("kentang, kol, tahu, siomay, pare, bumbu kacang");
+    break;
+  case "cilok":
+    console.log("aci dicolok, saos, kecap");
+    break;
+  case "bakso":
+    conole.log("bakso kuah kaldu, sledri, mie, bihun, sambal, saos");
+    break;
+  default:
+    console.log("Gak ada tukang dagang, gak bisa jajang euy");
 }
 ```
 
@@ -160,24 +161,24 @@ dalam Switch Statement, bisa juga bebrapa **case** berturut-turut.
 let nilai = 6;
 
 switch (nilai) {
-   case 1:
-   case 2:
-   case 3:
-   case 4:
-   case 5:
-      console.log("Itu nilai jelek amat ya");
-      break;
-   case 6:
-   case 7:
-   case 8:
-      console.log("Mending dapet nilai segini");
-      break;
-   case 9:
-   case 10:
-      console.log("Gud.. Lanjutkan sist");  
-      break;
-   default:
-      console.log("Masukan nilai 1 sampe 10");
+  case 1:
+  case 2:
+  case 3:
+  case 4:
+  case 5:
+    console.log("Itu nilai jelek amat ya");
+    break;
+  case 6:
+  case 7:
+  case 8:
+    console.log("Mending dapet nilai segini");
+    break;
+  case 9:
+  case 10:
+    console.log("Gud.. Lanjutkan sist");
+    break;
+  default:
+    console.log("Masukan nilai 1 sampe 10");
 }
 ```
 
@@ -189,7 +190,7 @@ Dalam Javascript ada 3 jenis perulangan, yaitu **for**, **while**, **do while**.
 
 ```javascript
 for (start; kondisi; increment) {
-   statement;
+  statement;
 }
 ```
 
@@ -200,22 +201,22 @@ for (start; kondisi; increment) {
 ```javascript
 // contoh sederhana
 for (let i = 0; i < 10; i++) {
-   console.log("Hello World!");
+  console.log("Hello World!");
 }
 
 // contoh looping dari 1 - 10
 for (let i = 0; i <= 10; i++) {
-   console.log("Nomor " + i);
+  console.log("Nomor " + i);
 }
 
 // contoh loping dari 10 - 1
 for (let i = 10; i >= 0; i--) {
-   console.log("Nomor " + i);
+  console.log("Nomor " + i);
 }
 
-// contoh lain 
+// contoh lain
 for (let i = 2; i <= 20; i = i + 2) {
-   console.log("Berkelipatan 2 " + i);
+  console.log("Berkelipatan 2 " + i);
 }
 ```
 
@@ -225,11 +226,11 @@ Nested for loop adalah sebuah for loop yang berada didalam for loop lainya, atau
 
 ```javascript
 for (start1; kondisi1; increment1) {
-   statement1
+  statement1;
 
-   for (start2; kondisi2; increment3) {
-      console.log("");
-   }
+  for (start2; kondisi2; increment3) {
+    console.log("");
+  }
 }
 ```
 
@@ -239,9 +240,9 @@ contohnya
 // contoh sederhana
 let i, j;
 for (i = 1; i <= 6; i++) {
-   for (j = 1; j <= 8; i++) {
-      console.log("variabel i berisi " + i + ", dan variabel j berisi " + j);
-   }
+  for (j = 1; j <= 8; i++) {
+    console.log("variabel i berisi " + i + ", dan variabel j berisi " + j);
+  }
 }
 ```
 
@@ -252,7 +253,7 @@ Infinity loop adalah perulangan yang terus-menerus dan tak pernah berhenti. Bias
 ```javascript
 // contoh
 for (let i = 20; i > 10; i++) {
-   console.log("Nah kan..");
+  console.log("Nah kan..");
 }
 ```
 
@@ -262,10 +263,10 @@ Perintah **Break** digunakan untuk menghentikan perulangan sebelum sepenuhnya se
 
 ```javascript
 for (let i = 0; i < 10; i++) {
-   if (i === 5) {
-      break;
-   }
-   console.log("Belajar Javascript " + i);
+  if (i === 5) {
+    break;
+  }
+  console.log("Belajar Javascript " + i);
 }
 ```
 
@@ -273,10 +274,10 @@ Sedangkan perintah **Continue** adalh kebalikan dari perinyah **Break**, program
 
 ```javascript
 for (let i = 0; i < 10; i++) {
-   if (i === 5) {
-      continue;
-   }
-   console.log("Belajar Javascript " + i);
+  if (i === 5) {
+    continue;
+  }
+  console.log("Belajar Javascript " + i);
 }
 ```
 
@@ -287,8 +288,8 @@ Perulangan kedua setelah For adalah While. Perulangan ini mirip dengan For, namu
 ```javascript
 start;
 while (kondisi) {
-   statement;
-   increment;
+  statement;
+  increment;
 }
 ```
 
@@ -298,25 +299,25 @@ Uniknya increment berada didalam looping itu sendiri.
 // contoh sederhana
 let i = 0;
 while (i <= 10) {
-   console.log("Belajar JS");
-   i++;
+  console.log("Belajar JS");
+  i++;
 }
 
 // perulangan terbalik
 let i = 100;
 while (i > 0) {
-   console.log(i + " * 5 = " + i * 5);
-   i = i - 5;
+  console.log(i + " * 5 = " + i * 5);
+  i = i - 5;
 }
 
 // menggunakan break
 let i = 0;
 while (i <= 10) {
-   if (i === 5) {
-      break;
-   }
-   console.log("Belajar Jevascript" + i);
-   i++;
+  if (i === 5) {
+    break;
+  }
+  console.log("Belajar Jevascript" + i);
+  i++;
 }
 ```
 
@@ -327,8 +328,8 @@ Do While Loop hampir sama dengan While Loop, namun beda penempatan kondisinya
 ```javascript
 start;
 do {
-   statement;
-   increment;
+  statement;
+  increment;
 } while (kondisi);
 ```
 
@@ -337,8 +338,8 @@ Berikut contoh penggunaanya.
 ```javascript
 let i = 0;
 do {
-   console.log("Belejar Javascript");
-   i++;
+  console.log("Belejar Javascript");
+  i++;
 } while (i <= 10);
 ```
 
@@ -352,6 +353,65 @@ Terdapat juga perulangan For Of dalam javascript, biasanya dilakukan dalam perul
 let barcelona = ["Messi", "Suarez", "Griezman", "Dembele", "Busquets"];
 
 for (i of barcelona) {
-   console.log(i);
+  console.log(i);
 }
 ```
+
+# Tugas Javascript (IF dan SWITCH)
+
+## Tugas IF ELSE
+
+Buat 5 buah kondisi untuk mengecek usia seseorang, dengan detail kondisi seperti berikut :
+
+1. Jika usia 0 sampai 5 tahun maka dia adalah "Balita".
+2. Jika usia 6 sampai 12 tahun maka dia adalah "Anak-anak".
+3. Jika usia 13 sampai 20 tahun maka dia adalah "Remaja".
+4. Jika usia 21 sampai 40 tahun maka dia adalah "Dewasa".
+5. Jika usia 41 sampai 60 tahun maka dia adalah "Tua".
+
+Kemudian, jika usia tidak memenuhi kelima kondisi diatas _(else)_, maka dia sudah paruh baya atau meninggal.
+
+## Tugas SWITCH
+
+Buat sebuah variable dengan nama _klubEropa_, dan lakukan pengecekan dengan 7 kondisi.
+
+1. Jika _klubEropa_ berisi _"Liverpool"_, maka cetak di `console` "Klub Inggris".
+1. Jika _klubEropa_ berisi _"Barcelona"_, maka cetak di `console` "Klub Spanyol".
+1. Jika _klubEropa_ berisi _"Juventus"_, maka cetak di `console` "Klub Italia".
+1. Jika _klubEropa_ berisi _"PSG"_, maka cetak di `console` "Klub Prancis".
+1. Jika _klubEropa_ berisi _"Borrusia Dortmun"_, maka cetak di `console` "Klub Jerman".
+1. Jika _klubEropa_ berisi _"Galatasaray"_, maka cetak di `console` "Klub Turki".
+1. Jika _klubEropa_ berisi _"AJAX"_, maka cetak di `console` "Klub Belanda".
+1. Dan _Default_ nya adalah "Bukan Klub Eropa".
+
+# Tugas Looping Javascript (FOR dan WHILE)
+
+## Tugas For Loop
+
+1. Buat perulang _Genap_ dengan kelipatan 4, dari 100 sampai 0.
+2. Buat perulangan _Ganjil_ dengan kelipatan 3, dari 0 sampai 90.
+
+## Tugas While Loop
+
+1. Buat perulang _Genap_ dengan kelipatan 4, dari 0 sampai 100.
+2. Buat perulangan _Ganjil_ dengan kelipatan 3, dari 100 sampai 0.
+
+## Tugas For Of Loop
+
+```javascript
+let asean = [
+  "Indonesia",
+  "Singapura",
+  "Malaysia",
+  "Thailand",
+  "Vietnam",
+  "Brunei",
+  "Kamboja",
+  "Laos",
+  "Myanmar",
+  "Filipina",
+  "Timor Leste"
+];
+```
+
+Buat perulangan _For Of Loop_ dengan _Array_ diatas.

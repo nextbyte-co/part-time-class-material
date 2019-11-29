@@ -16,14 +16,14 @@ Operator digunakan untuk mengolah data yang sudah terdefinisi sebelumnya dalam k
 Adalah operator yang melakukan perhitungan matematika, tentunya berkaitan dengan angka. Seperti penambahan, pengurangan, perkalian dan pembagian.
 
 | Nama Operator       | Operator | Contoh | Hasil                   |
-| -------------       |:--------:| -------| ----------------------- |
-| plus / positif      | +        | +x     | Nilai positif dari x    |
-| negatif / minus     | -        | -y     | Nilai negatif dari y    |
-| penambahan          | +        | x + y  | total dari x dan y      |
-| pengurangan         | -        | x - y  | selisih dari x dan y    |
-| perkalian           | *        | x * y  | hasil kali dari x dan y |
-| pembagian           | /        | a / b  | hasil bagi dari x dan y |
-| modulus / sisa bagi | %        | a % b  | sisa pembagian x bagi y |
+| ------------------- | :------: | ------ | ----------------------- |
+| plus / positif      |    +     | +x     | Nilai positif dari x    |
+| negatif / minus     |    -     | -y     | Nilai negatif dari y    |
+| penambahan          |    +     | x + y  | total dari x dan y      |
+| pengurangan         |    -     | x - y  | selisih dari x dan y    |
+| perkalian           |    \*    | x \* y | hasil kali dari x dan y |
+| pembagian           |    /     | a / b  | hasil bagi dari x dan y |
+| modulus / sisa bagi |    %     | a % b  | sisa pembagian x bagi y |
 
 ```javascript
 let foo;
@@ -56,12 +56,12 @@ Operator Increment digunakan untuk menambah suatu nilai sebanyak satu angka (+1)
 
 Operator Decrement digunakan untuk mengurang suatu nilai sebanyak satu angka (-1), penulisanya adalah seperti ini i--, merupakan penulisan singkat dari i = i - 1.
 
-| Nama           | Contoh   | Hasil                                        |
-| -------------- |:--------:| -------------------------------------------- |
-| pre-increment  | ++a      | tambah nilai a dengan 1, lalu kirim nilai a  |
-| post-increment | a++      | kirim nilai a, lalu tambah nilai a dengan 1  |
-| pre-decrement  | --a      | kurangi nilai a dengan 1, lalu kirim nilai a |
-| post-decrement | a--      | kirim nilai a, lalu kurangi nilai a dengan 1 |
+| Nama           | Contoh | Hasil                                        |
+| -------------- | :----: | -------------------------------------------- |
+| pre-increment  |  ++a   | tambah nilai a dengan 1, lalu kirim nilai a  |
+| post-increment |  a++   | kirim nilai a, lalu tambah nilai a dengan 1  |
+| pre-decrement  |  --a   | kurangi nilai a dengan 1, lalu kirim nilai a |
+| post-decrement |  a--   | kirim nilai a, lalu kurangi nilai a dengan 1 |
 
 ```javascript
 var foo;
@@ -87,15 +87,15 @@ console.log(foo); // 6
 Operator Perbandinan fungsinya untuk memeriksa antara nilai yang satu dengan nilai yang lainya, apakah lebih besar, lebih kecil, sama besar atau tidak sama.
 
 | Nama Operator                | Operator | Contoh  | Hasil                   |
-| ---------------------------- |:--------:| ------- | ----------------------- |
-| sama dengan                  | ==       | x == y  | Nilai positif dari x    |
-| identik dengan               | ===      | x === y | Nilai negatif dari y    |
-| tidak sama dengan            | !=       | x != b  | total dari x dan y      |
-| tidak identik denga          | !==      | x !== y | selisih dari x dan y    |
-| kurang dari                  | <        | x < y   | hasil kali dari x dan y |
-| lebih dari                   | >        | a > b   | hasil bagi dari x dan y |
-| kurang dari atau sama dengan | <=       | a <= b  | sisa pembagian x bagi y |
-| lebih dari atau sama dengan  | >=       | a >= b  | sisa pembagian x bagi y |
+| ---------------------------- | :------: | ------- | ----------------------- |
+| sama dengan                  |    ==    | x == y  | Nilai positif dari x    |
+| identik dengan               |   ===    | x === y | Nilai negatif dari y    |
+| tidak sama dengan            |    !=    | x != b  | total dari x dan y      |
+| tidak identik denga          |   !==    | x !== y | selisih dari x dan y    |
+| kurang dari                  |    <     | x < y   | hasil kali dari x dan y |
+| lebih dari                   |    >     | a > b   | hasil bagi dari x dan y |
+| kurang dari atau sama dengan |    <=    | a <= b  | sisa pembagian x bagi y |
+| lebih dari atau sama dengan  |    >=    | a >= b  | sisa pembagian x bagi y |
 
 ```javascript
 var foo;
@@ -125,11 +125,11 @@ console.log(foo); // true
 
 Operator Logika digunakan ketka membandinkan dua kondisi logika, apakah itu benar (**true**) atau salah (**false**).
 
-| Nama Operator | Operator | Contoh  | Hasil                                             |
-| ------------- |:--------:| ------- | ------------------------------------------------- |
-| AND           | &&       | x && y  | true, jika a dan b sama-sama bernilai true        |
-| OR            | ||       | x || y  | true, jika salah satu dari a atau b bernilai true |
-| NOT           | !        | !x      | true, jika a bernilai false.                      |
+| Nama Operator | Operator | Contoh | Hasil                                      |
+| ------------- | :------: | ------ | ------------------------------------------ |
+| AND           |    &&    | x && y | true, jika a dan b sama-sama bernilai true |
+| OR            |          |        |                                            | x |  | y | true, jika salah satu dari a atau b bernilai true |
+| NOT           |    !     | !x     | true, jika a bernilai false.               |
 
 ```javascript
 var foo;
@@ -139,13 +139,14 @@ console.log(foo); // false
 foo = true || false;
 console.log(foo); // true
 
-foo = !false;96
+foo = !false;
+96;
 console.log(foo); // true
 
-foo = true || true && false;
+foo = true || (true && false);
 console.log(foo); // true
 
-foo = false && true || true;
+foo = (false && true) || true;
 console.log(foo); // true
 ```
 
@@ -164,12 +165,12 @@ console.log(foo); // Sedang Belajar JavaScript
 foo = "Belajar " + "ECMAScript " + 5;
 console.log(foo); // Belajar ECMAScript 5
 
-foo = 'Selamat ';
+foo = "Selamat ";
 bar = "Belajar ";
 baz = `Bro / Sist`;
 
 let hasil = foo + bar + baz;
-console.log(hasil);  // Selamat Belajar Bro / Sist
+console.log(hasil); // Selamat Belajar Bro / Sist
 ```
 
 2. Template String (ES6)
@@ -177,12 +178,12 @@ console.log(hasil);  // Selamat Belajar Bro / Sist
 ```javascript
 let foo, bar, baz;
 
-foo = 'Selamat ';
+foo = "Selamat ";
 bar = "Belajar ";
 baz = `Bro / Sist`;
 
-let hasil = `${foo} ${bar} Javascript ${baz}`
-console.log(hasil);  // Selamat Belajar Javascript Bro / Sist
+let hasil = `${foo} ${bar} Javascript ${baz}`;
+console.log(hasil); // Selamat Belajar Javascript Bro / Sist
 ```
 
 - ### Spread Operator
@@ -190,13 +191,13 @@ console.log(hasil);  // Selamat Belajar Javascript Bro / Sist
 Spread operator merupaka fitur baru di ES6, gunanya untuk keperluan Array atau Object untuk menggabungkan Array atau Object itu sendiri. Cara menggunakan Spread Operator dengan menulis titik tiga kali (...), diikuti dengan variable yang ingin digabungkan.
 
 ```javascript
-let huruf = ['a', 'b', 'c', 'd'];
+let huruf = ["a", "b", "c", "d"];
 console.log(huruf); // Array ['a', 'b', 'c', 'd']
 
 let angka = [1, 2, 3, 4];
 console.log(angka); // Array [1, 2, 3, 4]
 
-let totalHuruf = [...hufur, 'e', 'f'];
+let totalHuruf = [...hufur, "e", "f"];
 console.log(totalHuruf); // Array ['a', 'b', 'c', 'd', 'e', 'f']
 
 let totalAngka = [0, ...angka, 5, 6];
@@ -204,4 +205,57 @@ console.log(totalAngka); // Array [0, 1, 2, 3, 4, 5, 6]
 
 let totalGabungan = [...huruf, ...angka];
 console.log(totalGabungan); //// Array ['a', 'b', 'c', 'd', 1, 2, 3, 4]
+```
+
+# Tugas Javascript (Operator)
+
+> _NOTE :_ Semua di _print_ menggunakan `console.log()`
+
+## Operator Aritmatika
+
+1. Buat dua variable bertipe number dengan value 10, lalu lakukan penjumlahan.
+2. Buat dua variable bertipe number dengan value 20 dan 10, lalu lakukan pengurangan.
+3. Buat dua variable bertipe number dengan value 5 dan 10, lalu lakukan perkalian.
+4. Buat dua variable bertipe number dengan value 30 dan 5, lalu lakukan pembagian.
+5. Buat dua variable bertipe number dengan value 55 dan 2, lalu lakukan modulus.
+
+## Opeprator Perbandingan
+
+1. Buat dua variable dan lakukan perbandingan menggunakan sama dengan (==), yang menghasilkan nilai _true_ dan _false_.
+2. Buat dua variable dan lakukan perbandingan menggunakan identik dengan (===), yang menghasilkan nilai _true_ dan _false_.
+3. Buat dua variable dan lakukan perbandingan menggunakan tidak sama dengan (!=), yang menghasilkan nilai _true_ dan _false_.
+4. Buat dua variable dan lakukan perbandingan menggunakan tidak identik dengan (!==), yang menghasilkan nilai _true_ dan _false_.
+5. Buat dua variable dan lakukan perbandingan menggunakan kurang dari (<), yang menghasilkan nilai _true_ dan _false_.
+6. Buat dua variable dan lakukan perbandingan menggunakan lebih dari (>), yang menghasilkan nilai _true_ dan _false_.
+7. Buat dua variable dan lakukan perbandingan menggunakan kurang dari sama dengan (<=), yang menghasilkan nilai _true_ dan _false_.
+8. Buat dua variable dan lakukan perbandingan menggunakan lebih dari sama dengan (>=), yang menghasilkan nilai _true_ dan _false_.
+
+## Operator Logika
+
+1. Buat dua variable bernilai boolean dan bandingkan dengan operator AND (&&).
+2. Buat dua variable bernilai boolean dan bandingkan dengan operator OR (||).
+3. Buat dua variable bernilai boolean dan masing-masing menggunakan operator NOT (!).
+
+## Spread Operator
+
+Terdapat dua buah _Array_
+
+```javascript
+let unggas = ["Ayam", "Burung", "Puyuh", "Kalkun"];
+let reptil = ["Buaya", "Ular", "Komodo", "Biawak"];
+```
+
+Gabungkan kedua array diatas menggunakan _Spread Operator_ sehinnga menjadi _Array_ sebagai berikut.
+
+```javascript
+let Binatang = [
+  "Ayam",
+  "Burung",
+  "Buaya",
+  "Ular",
+  "Komodo",
+  "Biawak",
+  "Puyuh",
+  "Kalkun"
+];
 ```
